@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Person() {
+function Person({ name, age, image }) {
   return (
-    <div>Person</div>
+    <article>
+      <img src={image} alt={name} />
+    </article>
   )
 }
 
