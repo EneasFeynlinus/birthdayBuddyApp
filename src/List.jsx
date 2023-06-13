@@ -1,7 +1,13 @@
 import React from 'react'
 
-const List = () => {
-  return <div>List</div>
+const List = ({ people }) => {
+  return (
+    <section>
+      {people.map((person) => {
+        console.log(person)
+      })}
+    </section>
+  )
 }
 
 export default List
